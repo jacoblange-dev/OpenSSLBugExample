@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		162987332948062E00EF15D1 /* ExampleSubFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 162987322948062E00EF15D1 /* ExampleSubFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1629873F294806D000EF15D1 /* Hello.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1629873E294806D000EF15D1 /* Hello.swift */; };
+		162987422948082300EF15D1 /* OpenSSL in Frameworks */ = {isa = PBXBuildFile; productRef = 162987412948082300EF15D1 /* OpenSSL */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				162987422948082300EF15D1 /* OpenSSL in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +83,9 @@
 			dependencies = (
 			);
 			name = ExampleSubFramework;
+			packageProductDependencies = (
+				162987412948082300EF15D1 /* OpenSSL */,
+			);
 			productName = ExampleSubFramework;
 			productReference = 1629872F2948062E00EF15D1 /* ExampleSubFramework.framework */;
 			productType = "com.apple.product-type.framework";
@@ -109,6 +114,9 @@
 				Base,
 			);
 			mainGroup = 162987252948062E00EF15D1;
+			packageReferences = (
+				162987402948082300EF15D1 /* XCRemoteSwiftPackageReference "OpenSSL" */,
+			);
 			productRefGroup = 162987302948062E00EF15D1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -341,6 +349,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		162987402948082300EF15D1 /* XCRemoteSwiftPackageReference "OpenSSL" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzyzanowskim/OpenSSL";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		162987412948082300EF15D1 /* OpenSSL */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 162987402948082300EF15D1 /* XCRemoteSwiftPackageReference "OpenSSL" */;
+			productName = OpenSSL;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 162987262948062E00EF15D1 /* Project object */;
 }

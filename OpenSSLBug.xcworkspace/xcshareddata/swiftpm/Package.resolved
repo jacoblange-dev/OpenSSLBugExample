@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "openssl",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/krzyzanowskim/OpenSSL",
+      "state" : {
+        "revision" : "52db2ab9de7f78d1dea0d728fddd47fb133e25b7",
+        "version" : "1.1.1900"
+      }
+    }
+  ],
+  "version" : 2
+}
